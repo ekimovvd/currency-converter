@@ -1,6 +1,6 @@
 <template>
   <div class="calculator">
-    <div class="calculator__container container px-[80px] py-[30px]">
+    <div class="calculator__container container py-[30px] mx-auto">
       <h2
         class="calculator__title text-[#0F4471] text-[34px] font-medium mb-[40px]"
       >
@@ -11,7 +11,7 @@
           <div>form</div>
           <calculatorResult class="calculator__result mt-[31px]" />
         </div>
-        <div>content</div>
+        <calculatorInfo />
       </div>
       <calculatorFooter />
     </div>
@@ -20,12 +20,14 @@
 
 <script>
 import calculatorResult from "~/modules/calculator/components/result/component/component.vue";
+import calculatorInfo from "~/modules/calculator/components/info/component/component.vue";
 import calculatorFooter from "~/modules/calculator/components/footer/component/component.vue";
 
 export default {
   name: "calculator",
   components: {
     calculatorResult,
+    calculatorInfo,
     calculatorFooter,
   },
 };

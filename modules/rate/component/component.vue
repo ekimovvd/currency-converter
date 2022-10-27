@@ -1,6 +1,6 @@
 <template>
   <div class="rate py-[30px]">
-    <div class="rate__container container px-[80px]">
+    <div class="rate__container container mx-auto">
       <h2 class="rate__title text-[#0F4471] text-[36px] font-bold mb-[40px]">
         Курс рубля
       </h2>
