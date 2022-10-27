@@ -21,7 +21,11 @@ export default {
 
   buildModules: ["@nuxtjs/tailwindcss"],
 
-  modules: ["@nuxtjs/axios", "@/modules/calculator/index.js"],
+  modules: [
+    "@nuxtjs/axios",
+    "@/modules/calculator/index.js",
+    "@/modules/rate/index.js",
+  ],
 
   axios: {
     baseURL: "/",

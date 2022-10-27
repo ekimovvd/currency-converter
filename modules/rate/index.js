@@ -1,11 +1,11 @@
 import * as _ from "lodash";
 import { resolve } from "path";
 
-const CalculatorModule = function () {
+const RateModule = function () {
   const names = [
     {
-      name: "calculator",
-      path: "/",
+      name: "rate",
+      path: "/rate",
     },
   ];
 
@@ -20,4 +20,4 @@ const CalculatorModule = function () {
   });
 };
 
-export default CalculatorModule;
+export default RateModule;
