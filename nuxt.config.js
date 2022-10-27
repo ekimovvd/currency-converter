@@ -13,7 +13,7 @@ export default {
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
 
-  css: [],
+  css: ["@/assets/css/main.css"],
 
   plugins: [],
 
@@ -21,7 +21,7 @@ export default {
 
   buildModules: ["@nuxtjs/tailwindcss"],
 
-  modules: ["@nuxtjs/axios"],
+  modules: ["@nuxtjs/axios", "@/modules/calculator/index.js"],
 
   axios: {
     baseURL: "/",
