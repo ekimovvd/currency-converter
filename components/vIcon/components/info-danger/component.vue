@@ -1,6 +1,6 @@
 <template>
   <svg
-    class="v-icon__info"
+    class="v-icon-info-danger"
     width="25"
     height="25"
     viewBox="0 0 25 25"
@@ -28,6 +28,6 @@
 
 <script>
 export default {
-  name: "v-icon-info",
+  name: "v-icon-info-danger",
 };
 </script>

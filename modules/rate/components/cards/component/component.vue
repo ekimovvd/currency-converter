@@ -1,5 +1,7 @@
 <template>
-  <ul class="rate-cards grid grid-cols-3 gap-[30px] mt-[30px]">
+  <ul
+    class="rate-cards grid grid-cols-3 gap-[30px] md:grid-cols-2 md:gap-x-[20px] md:gap-y-[19px] xs:grid-cols-1 xs:gap-y-[20px]"
+  >
     <rateCard v-for="card in getCards" :key="card.ID" :card="card" />
   </ul>
 </template>

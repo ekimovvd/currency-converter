@@ -3,11 +3,11 @@
     class="rate-card bg-[#F8F8F8] drop-shadow-[0_2x_10px_rgba(0,0,0,0.15)] rounded-[16px]"
   >
     <button
-      class="rate-card__button py-[39px] px-[30px] text-left w-full h-full"
+      class="rate-card__button py-[39px] px-[30px] text-left w-full h-full xl:px-[24px] xs:p-[25px]"
     >
-      <vIcon icon="cash-payment" />
+      <rateCardIcon />
       <rateCardHeader
-        class="rate-card__header mt-[37px] mb-[40px]"
+        class="rate-card__header mt-[37px] mb-[40px] xs:mt-[24px] xs:mb-[30px]"
         :header="card"
       />
       <rateCardList :list="getList" />
@@ -16,14 +16,14 @@
 </template>
 
 <script>
-import vIcon from "~/components/vIcon/component/component.vue";
+import rateCardIcon from "~/modules/rate/components/card/components/icon/component.vue";
 import rateCardHeader from "~/modules/rate/components/card/components/header/component.vue";
 import rateCardList from "~/modules/rate/components/card/components/list/component.vue";
 
 export default {
   name: "rate-card",
   components: {
-    vIcon,
+    rateCardIcon,
     rateCardHeader,
     rateCardList,
   },

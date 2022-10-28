@@ -19,7 +19,7 @@ export default {
 
   components: true,
 
-  buildModules: ["@nuxtjs/tailwindcss"],
+  buildModules: ["@nuxt/postcss8"],
 
   modules: [
     "@nuxtjs/axios",
@@ -31,5 +31,12 @@ export default {
     baseURL: "/",
   },
 
-  build: {},
+  build: {
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
+  },
 };

@@ -1,44 +1,48 @@
 <template>
   <div
-    class="v-icon flex items-center justify-center border-[3px] rounded-tr-[15px] rounded-bl-[15px]"
-    :class="getIconViewClass"
+    class="v-icon flex items-center justify-center w-[50px] h-[50px] border-[3px] rounded-tr-[15px] rounded-bl-[15px] xl:w-[45px] xl:h-[45px] md:w-[40px] md:h-[40px] xs:w-[42px] xs:h-[42px]"
+    :class="getBorderColorClass"
   >
     <component :is="getIcon"></component>
   </div>
 </template>
 
 <script>
-import vIconInfo from "~/components/vIcon/components/info/component.vue";
-import vIconCashPayment from "~/components/vIcon/components/cash-payment/component.vue";
+import vIconInfoDanger from "~/components/vIcon/components/info-danger/component.vue";
+import vIconInfoPrimary from "~/components/vIcon/components/info-primary/component.vue";
 
 const ICONS = {
-  info: "info",
-  "cash-payment": "cash-payment",
+  "info-danger": "info-danger",
+  "info-primary": "info-primary",
 };
 
 export default {
   name: "v-icon",
   components: {
-    info: vIconInfo,
-    "cash-payment": vIconCashPayment,
+    "info-danger": vIconInfoDanger,
+    "info-primary": vIconInfoPrimary,
   },
   props: {
     icon: {
       type: String,
-      default: "info",
+      required: true,
+    },
+    type: {
+      type: String,
+      required: true,
     },
   },
   computed: {
-    getIconViewClass() {
-      return `v-icon--view-${this.icon}`;
+    getBorderColorClass() {
+      return `v-icon--view-${this.type}`;
     },
 
     getIcon() {
       switch (this.icon) {
-        case ICONS.info:
-          return ICONS.info;
-        case ICONS["cash-payment"]:
-          return ICONS["cash-payment"];
+        case ICONS["info-danger"]:
+          return ICONS["info-danger"];
+        case ICONS["info-primary"]:
+          return ICONS["info-primary"];
         default:
           return "";
       }
@@ -49,15 +53,11 @@ export default {
 
 <style lang="scss">
 .v-icon {
-  &--view-info {
-    width: 50px;
-    height: 50px;
+  &--view-danger {
     border-color: #e02025;
   }
 
-  &--view-cash-payment {
-    width: 70px;
-    height: 70px;
+  &--view-primary {
     border-color: #0f4471;
   }
 }
