@@ -10,12 +10,14 @@
         class="calculator__content grid grid-cols-2 gap-x-[36px] mb-[40px] xl:gap-x-[39px] xl:mb-[24px] md:gap-x-[27px] md:mb-[21px] xs:grid-cols-1 xs:gap-x-[0px] xs:mb-[22px]"
       >
         <div class="calculator__form xs:mb-[17px]">
-          <div>form</div>
+          <calculatorForm />
           <calculatorResult
             class="calculator__result mt-[31px] xl:mt-[20px] md:mt-[23px] xs:mt-[19px]"
           />
         </div>
-        <calculatorInfo />
+        <div>
+          <calculatorInfo />
+        </div>
       </div>
       <calculatorFooter />
     </div>
@@ -23,6 +25,7 @@
 </template>
 
 <script>
+import calculatorForm from "~/modules/calculator/components/form/component/component.vue";
 import calculatorResult from "~/modules/calculator/components/result/component/component.vue";
 import calculatorInfo from "~/modules/calculator/components/info/component/component.vue";
 import calculatorFooter from "~/modules/calculator/components/footer/component/component.vue";
@@ -30,6 +33,7 @@ import calculatorFooter from "~/modules/calculator/components/footer/component/c
 export default {
   name: "calculator",
   components: {
+    calculatorForm,
     calculatorResult,
     calculatorInfo,
     calculatorFooter,
