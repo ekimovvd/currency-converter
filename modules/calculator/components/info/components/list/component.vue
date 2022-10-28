@@ -1,5 +1,5 @@
 <template>
-  <ul class="calculator-info__list grid grid-cols-1 gap-y-[15px]">
+  <ul class="calculator-info-list grid grid-cols-1 gap-y-[15px]">
     <calculatorInfoItem v-for="item in getItems" :key="item.id" :item="item" />
   </ul>
 </template>

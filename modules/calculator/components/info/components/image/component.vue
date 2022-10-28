@@ -1,5 +1,5 @@
 <template>
-  <li class="calculator-info__image">
+  <li class="calculator-info-image">
     <img :src="getSrcImg" :alt="image.name" :class="getImageClass" />
   </li>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <ul class="calculator-info__images grid grid-cols-2 gap-x-[15px] gap-y-[9px]">
+  <ul class="calculator-info-images grid grid-cols-2 gap-x-[15px] gap-y-[9px]">
     <calculatorInfoImage
       v-for="image in getImages"
       :key="image.id"

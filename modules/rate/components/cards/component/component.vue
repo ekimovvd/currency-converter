@@ -1,16 +1,16 @@
 <template>
   <ul class="rate-cards grid grid-cols-3 gap-[30px] mt-[30px]">
-    <rateCardsCard v-for="card in getCards" :key="card.ID" :card="card" />
+    <rateCard v-for="card in getCards" :key="card.ID" :card="card" />
   </ul>
 </template>
 
 <script>
-import rateCardsCard from "~/modules/rate/components/cards/components/card/component.vue";
+import rateCard from "~/modules/rate/components/card/component/component.vue";
 
 export default {
   name: "rate-cards",
   components: {
-    rateCardsCard,
+    rateCard,
   },
   computed: {
     getCards() {

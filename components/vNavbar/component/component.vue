@@ -1,6 +1,6 @@
 <template>
-  <div class="v-navbar bg-[#F8F8F8] py-[16px] px-[80px]">
-    <div class="v-navbar__container container">
+  <div class="v-navbar bg-[#F8F8F8] py-[16px]">
+    <div class="v-navbar__container container mx-auto">
       <vNavbarLinks />
     </div>
   </div>

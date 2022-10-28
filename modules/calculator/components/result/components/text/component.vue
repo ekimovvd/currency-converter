@@ -1,5 +1,5 @@
 <template>
-  <p class="calculator-result__text text-[#0F4471] text-[24px] font-bold">
+  <p class="calculator-result-text text-[#0F4471] text-[24px] font-bold">
     Итого: {{ getResult }}
   </p>
 </template>

@@ -1,10 +1,12 @@
 <template>
-  <div class="calculator-footer__info font-['Roboto']">
-    <h1 class="calculator-footer__title text-[#093078] text-[36px] font-medium">
+  <div class="calculator-footer-info font-['Roboto']">
+    <h1
+      class="calculator-footer-info__title text-[#093078] text-[36px] font-medium"
+    >
       Нужна помощь? <br />
       Мы поможем! Просто свяжитесь с нами.
     </h1>
-    <p class="calculator-footer__text text-[16px] text-[#404456]">
+    <p class="calculator-footer-info__text text-[16px] text-[#404456]">
       Наши специалисты с радостью ответят на все ваши вопросы и дадут
       профессиональную консультацию по товарам.
     </p>
