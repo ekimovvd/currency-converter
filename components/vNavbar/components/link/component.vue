@@ -1,9 +1,8 @@
 <template>
-  <li class="v-navbar__link">
+  <li class="v-navbar-link">
     <nuxt-link
-      class="v-navbar__text text-[#666666] text-[12px] font-medium font-['Roboto'] flex items-center justify-center"
+      class="v-navbar-link__text text-[#666666] text-[12px] font-medium font-roboto flex items-center justify-center"
       :to="link.to"
-      active-class="text-[#343434]"
     >
       {{ link.name }}
     </nuxt-link>
@@ -12,7 +11,7 @@
 
 <script>
 export default {
-  name: "vNavbarLink",
+  name: "v-navbar-link",
   props: {
     link: {
       type: Object,
@@ -21,3 +20,13 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.v-navbar-link {
+  &__text {
+    &.nuxt-link-exact-active {
+      color: #343434;
+    }
+  }
+}
+</style>

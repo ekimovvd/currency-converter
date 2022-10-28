@@ -1,5 +1,5 @@
 <template>
-  <div class="rate-card-header">
+  <div class="rate-card-header font-roboto">
     <h5
       class="rate-card-header__title text-[#0F4471] text-[20px] font-bold mb-[30px] md:text-[18px] xs:mb-[23px] xs:text-[17px]"
     >

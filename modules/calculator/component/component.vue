@@ -2,7 +2,7 @@
   <div class="calculator">
     <div class="calculator__container container py-[30px] mx-auto">
       <h2
-        class="calculator__title text-[#0F4471] text-[34px] font-medium mb-[40px] xl:mb-[30px] xl:text-[26px] md:text-[26px] md:mb-[20px] xs:mb-[24px] xs:text-[20px]"
+        class="calculator__title text-[#0F4471] text-[34px] font-roboto font-medium mb-[40px] xl:mb-[30px] xl:text-[26px] md:text-[26px] md:mb-[20px] xs:mb-[24px] xs:text-[20px]"
       >
         Валютный калькулятор
       </h2>

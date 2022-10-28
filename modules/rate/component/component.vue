@@ -2,7 +2,7 @@
   <div class="rate py-[30px]">
     <div class="rate__container container mx-auto xs:container">
       <h2
-        class="rate__title text-[#0F4471] text-[36px] font-bold mb-[40px] xl:text-[26px] md:text-[26px] md:mb-[20px] xs:text-[20px]"
+        class="rate__title text-[#0F4471] text-[36px] font-roboto font-bold mb-[40px] xl:text-[26px] md:text-[26px] md:mb-[20px] xs:text-[20px]"
       >
         Курс рубля
       </h2>
