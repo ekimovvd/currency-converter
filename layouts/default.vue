@@ -17,15 +17,15 @@ export default {
       valutes: [],
     };
   },
-  async mounted() {
-    try {
-      this.valutes = await this.$axios.get("/daily_json.js").then((res) => {
-        console.log(res);
-        return res.data.Valute;
-      });
-    } catch (e) {
-      console.log(e);
-    }
-  },
+  // async mounted() {
+  //   try {
+  //     this.valutes = await this.$axios.get("/daily_json.js").then((res) => {
+  //       console.log(res);
+  //       return res.data.Valute;
+  //     });
+  //   } catch (e) {
+  //     console.log(e);
+  //   }
+  // },
 };
 </script>

@@ -5,6 +5,7 @@
     :placeholder="placeholder"
     :id="id"
     :value="value"
+    :disabled="disabled"
     @input="onChangeValue"
   />
 </template>
@@ -29,6 +30,10 @@ export default {
       type: [String, Number],
       required: true,
     },
+    disabled: {
+      type: Boolean,
+      default: false,
+    },
   },
   methods: {
     onChangeValue(event) {
@@ -37,7 +42,7 @@ export default {
         this.type === "number"
           ? !isNaN(parseInt(event.target.value))
             ? parseInt(event.target.value)
-            : 0
+            : ""
           : event.target.value
       );
     },

@@ -27,7 +27,7 @@
         placeholder="Введите название или код"
         id="valute2"
         :value="valute2"
-        @change="onChangeValute2"
+        :disabled="true"
       />
     </div>
     <div class="calculator-group flex flex-col">
@@ -59,26 +59,27 @@ export default {
     calculatorFormLabel,
     vInput,
   },
-  data() {
-    return {
-      valute1: "",
-      valute2: "",
-      count: 0,
-    };
+  props: {
+    valute1: {
+      type: String,
+      default: "",
+    },
+    valute2: {
+      type: String,
+      default: "",
+    },
+    count: {
+      type: [Number, String],
+      default: "",
+    },
   },
   methods: {
     onChangeValute1(value) {
-      console.log(value);
-      this.valute1 = value;
-    },
-
-    onChangeValute2(value) {
-      this.valute2 = value;
+      this.$emit("changeValute1", value);
     },
 
     onChangeCount(value) {
-      console.log(value);
-      this.count = value;
+      this.$emit("changeCount", value);
     },
   },
 };
