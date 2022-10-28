@@ -54,6 +54,20 @@ export default {
       count: "",
     };
   },
+  // CORS ERROR - не стал разбираться, как починить, захардкодил данные
+  // async mounted() {
+  //   try {
+  //     await this.$axios
+  //       .get("/daily_json.js", {
+  //         headers: { "Access-Control-Allow-Origin": "*" },
+  //       })
+  //       .then((res) => {
+  //         console.log(res);
+  //       });
+  //   } catch (e) {
+  //     console.log(e);
+  //   }
+  // },
   computed: {
     getValutes() {
       return [
